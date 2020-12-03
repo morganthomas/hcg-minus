@@ -1,0 +1,11 @@
+hcg-minus
+---------
+
+a simple-minded non-optimised [haskell][hs] cg library
+
+[hs]: http://haskell.org/
+
+© [rohan drape][rd], 2009-2017, [gpl]
+
+[rd]: http://rd.slavepianos.org/
+[gpl]: http://gnu.org/copyleft/
