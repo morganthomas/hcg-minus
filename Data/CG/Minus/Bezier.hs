@@ -1,4 +1,3 @@
--- * Bezier functions.
 module Data.CG.Minus.Bezier where
 
 import Data.CG.Minus.Types

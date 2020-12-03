@@ -4,11 +4,11 @@ module Data.CG.Minus.Colour.SVG where
 import qualified Data.Colour as C {- colour -}
 import qualified Data.Colour.Names as N {- colour -}
 import qualified Data.Colour.SRGB as C {- colour -}
-import Data.Functor.Identity {- base -}
+import Data.Maybe
 
 -- | Type specialised 'N.readColourName'.
 svg_name_to_colour :: String -> C.Colour Double
-svg_name_to_colour = runIdentity . N.readColourName
+svg_name_to_colour = fromMaybe (error "svg_name_to_colour") . N.readColourName
 
 -- | The named colours of the @SVG@ specification, alphabetical order.
 --   <https://www.w3.org/TR/SVG11/types.html#ColorKeywords>
